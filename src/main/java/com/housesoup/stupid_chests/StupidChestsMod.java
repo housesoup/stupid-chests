@@ -2,8 +2,6 @@ package com.housesoup.stupid_chests;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
-import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -48,7 +46,6 @@ public class StupidChestsMod
         // Register Deferred Registers to the mod event bus so things get registered
         ModBlocks.register(modEventBus);
         ModItems.register(modEventBus);
-        ModBlockEntities.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
