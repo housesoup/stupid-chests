@@ -1,6 +1,6 @@
 {
     "parent": "stupid_chests:item/baked_chest",
     "textures": {
-        "chest": "minecraft:entity/chest/normal"
+        "texture": "stupid_chests:item/stupid_chest"
     }
 }
