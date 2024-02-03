@@ -5,7 +5,6 @@ import javax.annotation.Nullable;
 
 import org.slf4j.Logger;
 
-import com.housesoup.stupid_chests.StupidChestsMod;
 import com.mojang.logging.LogUtils;
 
 import net.minecraft.core.BlockPos;
@@ -23,7 +22,6 @@ import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 
 public class StupidChestBlock extends Block {
-    private static final Logger LOGGER2 = LogUtils.getLogger();
     public static final BooleanProperty NORTH = BlockStateProperties.NORTH;
     public static final BooleanProperty EAST = BlockStateProperties.EAST;
     public static final BooleanProperty SOUTH = BlockStateProperties.SOUTH;
@@ -66,8 +64,6 @@ public class StupidChestBlock extends Block {
     public BlockState updateShape(BlockState state, Direction neighborDir, BlockState neighbor, LevelAccessor level, BlockPos pos, BlockPos neighborPos) {
         BooleanProperty property = PipeBlock.PROPERTY_BY_DIRECTION.get(neighborDir);
         Boolean attaches = attachesTo(level, pos, neighborDir);
-
-        LOGGER2.info("Neighbor changed: {} from {} to {}", neighborDir, state.getValue(property), attaches);
 
         // If the face changed, update the block state
         if (state.getValue(property) != attaches) {
