@@ -1,5 +1,7 @@
 package com.housesoup.stupid_chests;
 
+import javax.annotation.Nonnull;
+
 import com.google.common.base.Supplier;
 import com.housesoup.stupid_chests.common.item.StupidChestItem;
 

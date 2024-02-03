@@ -24,12 +24,12 @@ public class StupidChestsMod
     public static final String MODID = "stupid_chests";
 
     // Directly reference a slf4j logger
-    private static final Logger LOGGER = LogUtils.getLogger();
+    public static final Logger LOGGER = LogUtils.getLogger();
     
     public StupidChestsMod()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-
+        
         // Common setup
         modEventBus.addListener((final FMLCommonSetupEvent event) -> {
             LOGGER.info("HELLO FROM COMMON SETUP");
@@ -42,7 +42,7 @@ public class StupidChestsMod
 
             Config.items.forEach((item) -> LOGGER.info("ITEM >> {}", item.toString()));
         });
-
+        
         // Register Deferred Registers to the mod event bus so things get registered
         ModBlocks.register(modEventBus);
         ModItems.register(modEventBus);
