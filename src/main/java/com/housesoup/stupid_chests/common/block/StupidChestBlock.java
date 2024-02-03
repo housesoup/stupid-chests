@@ -3,10 +3,6 @@ package com.housesoup.stupid_chests.common.block;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
-import org.slf4j.Logger;
-
-import com.mojang.logging.LogUtils;
-
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;
@@ -75,10 +71,6 @@ public class StupidChestBlock extends Block {
 
     private @Nonnull Boolean attachesTo(LevelReader level, BlockPos pos, Direction dir) {
         BlockPos otherPos = pos.relative(dir);
-        return attachesTo(level, otherPos);
-    }
-
-    private @Nonnull Boolean attachesTo(LevelReader level, BlockPos target) {
-        return (Boolean)level.getBlockState(target).is(this);
+        return (Boolean)level.getBlockState(otherPos).is(this);
     }
 }
