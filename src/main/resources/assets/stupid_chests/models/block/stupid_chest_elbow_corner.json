@@ -1,0 +1,43 @@
+{
+	"credit": "Made with Blockbench",
+	"render_type": "minecraft:cutout",
+	"textures": {
+		"0": "stupid_chests:block/stupid_chest_edge",
+		"particle": "block/oak_planks"
+	},
+	"elements": [
+		{
+			"from": [1, 0, 1],
+			"to": [15, 14, 15],
+			"faces": {
+				"north": {"uv": [8.25, 8.25, 11.75, 11.75], "texture": "#0"},
+				"west": {"uv": [0.25, 8.25, 3.75, 11.75], "texture": "#0"},
+				"down": {"uv": [0.25, 8.25, 3.75, 11.75], "texture": "#0", "cullface": "down"}
+			}
+		},
+		{
+			"from": [1, 0, 15],
+			"to": [15, 14, 16],
+			"faces": {
+				"west": {"uv": [3.75, 12.25, 3.75, 15.75], "texture": "#0"},
+				"down": {"uv": [12.25, 4.5, 15.75, 4.75], "texture": "#0", "cullface": "down"}
+			}
+		},
+		{
+			"from": [1, 14, 1],
+			"to": [15, 15, 15],
+			"faces": {
+				"north": {"uv": [12.25, 6.25, 15.75, 6.5], "texture": "#0"},
+				"west": {"uv": [12.25, 6.25, 15.75, 6.5], "texture": "#0"}
+			}
+		},
+		{
+			"from": [15, 0, 1],
+			"to": [16, 14, 15],
+			"faces": {
+				"north": {"uv": [3.75, 12.25, 3.75, 15.75], "texture": "#0"},
+				"down": {"uv": [3.75, 12.25, 4, 15.75], "texture": "#0", "cullface": "down"}
+			}
+		}
+	]
+}

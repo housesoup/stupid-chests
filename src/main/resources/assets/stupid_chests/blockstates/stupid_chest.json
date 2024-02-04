@@ -1,7 +1,78 @@
 {
     "variants": {
-        "": {
-            "model": "stupid_chests:block/stupid_chest_1x1x1"
+        "north=false,east=false,south=false,west=false,up=false,down=false": {
+            "model": "stupid_chests:block/stupid_chest_single"
+        },
+
+
+        "north=false,east=true,south=false,west=true,up=false,down=false": {
+            "model": "stupid_chests:block/stupid_chest_x_log"
+        },
+        "north=false,east=true,south=false,west=false,up=false,down=false": {
+            "model": "stupid_chests:block/stupid_chest_x_cap"
+        },
+        "north=false,east=false,south=false,west=true,up=false,down=false": {
+            "model": "stupid_chests:block/stupid_chest_x_cap",
+            "y": 180
+        },
+
+        "north=true,east=false,south=true,west=false,up=false,down=false": {
+            "model": "stupid_chests:block/stupid_chest_x_log",
+            "y": 90
+        },
+        "north=false,east=false,south=true,west=false,up=false,down=false": {
+            "model": "stupid_chests:block/stupid_chest_x_cap",
+            "y": 90
+        },
+        "north=true,east=false,south=false,west=false,up=false,down=false": {
+            "model": "stupid_chests:block/stupid_chest_x_cap",
+            "y": 270
+        },
+
+        "north=false,east=false,south=false,west=false,up=true,down=false": {
+            "model": "stupid_chests:block/stupid_chest_y_cap"
+        },
+        "north=false,east=false,south=false,west=false,up=false,down=true": {
+            "model": "stupid_chests:block/stupid_chest_y_cap",
+            "x": 180
+        },
+        "north=false,east=false,south=false,west=false,up=true,down=true": {
+            "model": "stupid_chests:block/stupid_chest_y_log"
+        },
+
+
+        "north=true,east=true,south=true,west=true,up=true,down=false": {
+            "model": "stupid_chests:block/stupid_chest_0_face"
+        },
+        "north=false,east=true,south=true,west=false,up=true,down=false": {
+            "model": "stupid_chests:block/stupid_chest_0_corner"
+        },
+        "north=false,east=false,south=true,west=true,up=true,down=false": {
+            "model": "stupid_chests:block/stupid_chest_0_corner",
+            "y": 90
+        },
+        "north=true,east=false,south=false,west=true,up=true,down=false": {
+            "model": "stupid_chests:block/stupid_chest_0_corner",
+            "y": 180
+        },
+        "north=true,east=true,south=false,west=false,up=true,down=false": {
+            "model": "stupid_chests:block/stupid_chest_0_corner",
+            "y": 270
+        },
+        "north=false,east=true,south=true,west=true,up=true,down=false": {
+            "model": "stupid_chests:block/stupid_chest_0_edge"
+        },
+        "north=true,east=false,south=true,west=true,up=true,down=false": {
+            "model": "stupid_chests:block/stupid_chest_0_edge",
+            "y": 90
+        },
+        "north=true,east=true,south=false,west=true,up=true,down=false": {
+            "model": "stupid_chests:block/stupid_chest_0_edge",
+            "y": 180
+        },
+        "north=true,east=true,south=true,west=false,up=true,down=false": {
+            "model": "stupid_chests:block/stupid_chest_0_edge",
+            "y": 270
         }
     }
 }
